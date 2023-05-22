@@ -45,8 +45,8 @@ public class EmployeeController {
         return employeeService.getEmployeeSalarySum();
     }
     @GetMapping("/high")
-    public int getEmployeeSalaryHingSalary() {
-        return employeeService.getEmployeeSalaryHingSalary();
+    public int getEmployeeHingSalary() {
+        return employeeService.getEmployeeHingSalary();
     }
 
 }

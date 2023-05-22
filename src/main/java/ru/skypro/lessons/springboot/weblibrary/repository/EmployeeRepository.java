@@ -12,5 +12,5 @@ public interface EmployeeRepository {
     int getEmployeeSalaryMax();
     int getEmployeeSalaryMin();
     int getEmployeeSalarySum();
-    int getEmployeeSalaryHingSalary();
+    int getEmployeeHingSalary();
 }

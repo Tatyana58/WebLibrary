@@ -38,7 +38,7 @@ public class EmployeeRepositoryImpl implements EmployeeRepository{
     }
 
     @Override
-    public int getEmployeeSalaryHingSalary() {
+    public int getEmployeeHingSalary() {
         return 8;
     }
 }

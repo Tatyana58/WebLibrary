@@ -10,6 +10,6 @@ public interface EmployeeService {
     int getEmployeeSalaryMax();
     int getEmployeeSalaryMin();
     int getEmployeeSalarySum();
-    int getEmployeeSalaryHingSalary();
+    int getEmployeeHingSalary();
 
 }

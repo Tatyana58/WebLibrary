@@ -37,8 +37,8 @@ public class EmployeeServiceImpl implements EmployeeService {
         return employeeRepository.getEmployeeSalarySum();
     }
     @Override
-    public int getEmployeeSalaryHingSalary() {
-        return employeeRepository.getEmployeeSalaryHingSalary();
+    public int getEmployeeHingSalary() {
+        return employeeRepository.getEmployeeHingSalary();
     }
 
 
