@@ -1,12 +1,9 @@
 package ru.skypro.lessons.springboot.weblibrary.controller;
 
-import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import ru.skypro.lessons.springboot.weblibrary.pojo.Employee;
-import ru.skypro.lessons.springboot.weblibrary.repository.EmployeeRepository;
 import ru.skypro.lessons.springboot.weblibrary.service.EmployeeService;
 
 import java.util.List;
@@ -31,12 +28,12 @@ public class EmployeeController {
     }
 
     @GetMapping("/salary/max")
-    public List<Employee> getEmployeeSalaryMax() {
+    public int getEmployeeSalaryMax() {
         return employeeService.getEmployeeSalaryMax();
     }
 
     @GetMapping("/salary/min")
-    public List<Employee> getEmployeeSalaryMin() {
+    public int getEmployeeSalaryMin() {
         return employeeService.getEmployeeSalaryMin();
     }
 
@@ -45,7 +42,7 @@ public class EmployeeController {
         return employeeService.getEmployeeSalarySum();
     }
     @GetMapping("/high")
-    public List<Employee> getEmployeeHingSalary() {
+    public int getEmployeeHingSalary() {
         return employeeService.getEmployeeHingSalary();
     }
 

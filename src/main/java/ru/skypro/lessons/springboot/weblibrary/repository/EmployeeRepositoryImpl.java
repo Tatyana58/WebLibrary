@@ -26,7 +26,7 @@ public class EmployeeRepositoryImpl implements EmployeeRepository{
     @Override
     public int getEmployeeSalaryMax() {
         Employee max = employeeList.stream().max(Employee::compare).get();
-        return max.getSalary();
+        return employeeList.stream().max(Employee::compare).get().getSalary();
     }
 
     @Override
