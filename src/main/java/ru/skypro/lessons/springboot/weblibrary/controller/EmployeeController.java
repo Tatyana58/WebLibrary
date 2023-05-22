@@ -29,4 +29,24 @@ public class EmployeeController {
     public int getEmployeeCount() {
         return employeeService.getEmployeeCount();
     }
+
+    @GetMapping("/salary/max")
+    public int getEmployeeSalaryMax() {
+        return employeeService.getEmployeeSalaryMax();
+    }
+
+    @GetMapping("/salary/min")
+    public int getEmployeeSalaryMin() {
+        return employeeService.getEmployeeSalaryMin();
+    }
+
+    @GetMapping("/salary/sum")
+    public int getEmployeeSalarySum() {
+        return employeeService.getEmployeeSalarySum();
+    }
+    @GetMapping("/high")
+    public int getEmployeeSalaryHingSalary() {
+        return employeeService.getEmployeeSalaryHingSalary();
+    }
+
 }

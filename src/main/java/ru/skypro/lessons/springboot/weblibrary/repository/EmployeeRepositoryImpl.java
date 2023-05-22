@@ -23,5 +23,22 @@ public class EmployeeRepositoryImpl implements EmployeeRepository{
     public int getEmployeeCount() {
         return employeeList.size();
     }
+    @Override
+    public int getEmployeeSalaryMax() {
+        return 10;
+    }
+    @Override
+    public int getEmployeeSalaryMin() {
+        return 2;
+    }
 
+    @Override
+    public int getEmployeeSalarySum() {
+        return 12;
+    }
+
+    @Override
+    public int getEmployeeSalaryHingSalary() {
+        return 8;
+    }
 }

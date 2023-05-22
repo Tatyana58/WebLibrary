@@ -1,6 +1,7 @@
 package ru.skypro.lessons.springboot.weblibrary.service;
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
 import ru.skypro.lessons.springboot.weblibrary.pojo.Employee;
 import ru.skypro.lessons.springboot.weblibrary.repository.EmployeeRepository;
 
@@ -22,4 +23,23 @@ public class EmployeeServiceImpl implements EmployeeService {
     public int getEmployeeCount() {
         return employeeRepository.getEmployeeCount();
     }
+
+    @Override
+    public int getEmployeeSalaryMax() {
+        return employeeRepository.getEmployeeSalaryMax();
+    }
+    @Override
+    public int getEmployeeSalaryMin() {
+        return employeeRepository.getEmployeeSalaryMin();
+    }
+    @Override
+    public int getEmployeeSalarySum() {
+        return employeeRepository.getEmployeeSalarySum();
+    }
+    @Override
+    public int getEmployeeSalaryHingSalary() {
+        return employeeRepository.getEmployeeSalaryHingSalary();
+    }
+
+
 }

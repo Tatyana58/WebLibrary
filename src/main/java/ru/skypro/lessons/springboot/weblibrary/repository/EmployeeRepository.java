@@ -8,4 +8,9 @@ public interface EmployeeRepository {
     public List<Employee> getAllEmployees();
 
     int getEmployeeCount();
+
+    int getEmployeeSalaryMax();
+    int getEmployeeSalaryMin();
+    int getEmployeeSalarySum();
+    int getEmployeeSalaryHingSalary();
 }
