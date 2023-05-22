@@ -1,4 +1,4 @@
-package ru.skypro.lessons.springboot.weblibrary.pojo.repository;
+package ru.skypro.lessons.springboot.weblibrary.repository;
 
 import org.springframework.stereotype.Repository;
 import ru.skypro.lessons.springboot.weblibrary.pojo.Employee;
@@ -14,9 +14,14 @@ public class EmployeeRepositoryImpl implements EmployeeRepository{
             new Employee("Олег", 80_000),
             new Employee("Вика", 165_000));
 
+
     @Override
     public List<Employee> getAllEmployees() {
         return employeeList;
+    }
+    @Override
+    public int getEmployeeCount() {
+        return employeeList.size();
     }
 
 }
