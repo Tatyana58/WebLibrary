@@ -5,16 +5,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping
+@RequestMapping("/library")
 public class FirstController {
     private int counter;
 
-    @GetMapping("/library")
+    @GetMapping
     public String showHelloWorld(){
         return "Hello World";
     }
 
-    @GetMapping("/library/counter")
+    @GetMapping("/counter")
     public String showCounter() {
         return "Количество запросов: " + ++counter;
         // Увеличиваем счетчик и выводим его значение
