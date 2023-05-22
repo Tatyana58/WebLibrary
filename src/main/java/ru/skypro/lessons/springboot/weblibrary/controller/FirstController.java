@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class FirstController {
     private int counter;
 
-    @GetMapping
+    @GetMapping("/library")
     public String showHelloWorld(){
         return "Hello World";
     }
 
-    @GetMapping("/counter")
+    @GetMapping("/library/counter")
     public String showCounter() {
         return "Количество запросов: " + ++counter;
         // Увеличиваем счетчик и выводим его значение
