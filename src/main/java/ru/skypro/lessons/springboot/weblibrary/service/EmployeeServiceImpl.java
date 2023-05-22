@@ -25,11 +25,11 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public int getEmployeeSalaryMax() {
+    public List<Employee> getEmployeeSalaryMax() {
         return employeeRepository.getEmployeeSalaryMax();
     }
     @Override
-    public int getEmployeeSalaryMin() {
+    public List<Employee> getEmployeeSalaryMin() {
         return employeeRepository.getEmployeeSalaryMin();
     }
     @Override
@@ -37,7 +37,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         return employeeRepository.getEmployeeSalarySum();
     }
     @Override
-    public int getEmployeeHingSalary() {
+    public List<Employee> getEmployeeHingSalary() {
         return employeeRepository.getEmployeeHingSalary();
     }
 
